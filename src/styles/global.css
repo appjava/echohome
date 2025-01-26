@@ -6,8 +6,8 @@
     background-image: url(src/images/Cover.jpg);
     background-color:black;
     background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 70%;
+    background-attachment: fixed;
+    background-size: 100% 70%;
     color: white;
     height: 450px;
     opacity: 0.8;
@@ -32,5 +32,10 @@
 
 #herramientas img{
     width: 300px;
-    
+
+}
+
+#galeria img:hover{
+    scale: 110%;
+    opacity: 0.5;
 }
