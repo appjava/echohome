@@ -1,0 +1,13 @@
+---
+const images = [
+  "src/images/image1.png",
+  "src/images/image2.png",
+  "src/images/image3.png",
+];
+---
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+  {images.map((image) => (
+    <img src={image} alt="EchoHome Gallery" class="rounded-lg shadow-lg" />
+  ))}
+</div>

@@ -1,0 +1,24 @@
+---
+const testimonials = [
+  {
+    name: "Carlos Gómez",
+    role: "Arquitecto",
+    quote: "EchoHome es un proyecto innovador que combina sostenibilidad y tecnología de manera excepcional.",
+  },
+  {
+    name: "María López",
+    role: "Ingeniera Ambiental",
+    quote: "La integración de energías renovables en EchoHome es un ejemplo a seguir para futuros proyectos.",
+  },
+];
+---
+
+<div class="space-y-6">
+  {testimonials.map((testimonial) => (
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <p class="text-gray-700 italic">"{testimonial.quote}"</p>
+      <p class="mt-4 font-semibold">{testimonial.name}</p>
+      <p class="text-sm text-gray-600">{testimonial.role}</p>
+    </div>
+  ))}
+</div>

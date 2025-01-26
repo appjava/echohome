@@ -1,0 +1,16 @@
+---
+const stats = [
+  { value: "75%", label: "Reducción en el consumo energético" },
+  { value: "50%", label: "Ahorro en costos de servicios públicos" },
+  { value: "100%", label: "Energía proveniente de fuentes renovables" },
+];
+---
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  {stats.map((stat) => (
+    <div class="text-center">
+      <p class="text-4xl font-bold text-green-700">{stat.value}</p>
+      <p class="text-gray-700">{stat.label}</p>
+    </div>
+  ))}
+</div>

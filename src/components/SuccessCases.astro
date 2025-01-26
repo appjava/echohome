@@ -1,0 +1,24 @@
+---
+const cases = [
+  {
+    title: "Comunidad Rural en Antioquia",
+    description: "Implementación de EchoHome en una comunidad rural, mejorando la calidad de vida y promoviendo la autosuficiencia energética.",
+    image: "/images/rural.jpg",
+  },
+  {
+    title: "Eco-Hotel en el Eje Cafetero",
+    description: "Un hotel que adoptó el modelo EchoHome, reduciendo su huella de carbono y atrayendo turistas conscientes del medio ambiente.",
+    image: "/images/hotel.jpg",
+  },
+];
+---
+
+<div class="space-y-6">
+  {cases.map((caseItem) => (
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <img src={caseItem.image} alt={caseItem.title} class="rounded-lg mb-4" />
+      <h3 class="text-2xl font-semibold">{caseItem.title}</h3>
+      <p class="text-gray-700">{caseItem.description}</p>
+    </div>
+  ))}
+</div>
