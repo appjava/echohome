@@ -1,22 +1,20 @@
 ---
-const images = [
-  "src/images/image1.png",
-  "src/images/image2.png",
-  "src/images/image3.png",
-];
 
 const imagesLink = [
   {
     image: "images/image1.png",
-    enlace:"https://echoprojects3d.web.app/echoSpace/web/viewHome.html"
+    enlace:"https://echoprojects3d.web.app/echoSpace/web/viewHome.html",
+    title: "Emplazamiento"
   },
   {
     image:"images/image2.png",
-    enlace:"https://echoprojects3d.web.app/echoHome/web/viewHome.html"
+    enlace:"https://echoprojects3d.web.app/echoHome/web/viewHome.html",
+    title: "Modelo 3D"
   },
   {
     image:"images/image3.png",
-    enlace:"https://home.by.me/en/project/appjavadev2019/copie-de-copie-de-alpinahome/medias"
+    enlace:"https://home.by.me/en/project/appjavadev2019/copie-de-copie-de-alpinahome/medias",
+    title: "Diseño Interior"
   }
 ];
 
@@ -25,8 +23,8 @@ const imagesLink = [
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
   {
-  imagesLink.map(({image, enlace}) => (
-    <a href={enlace} target="_blank"><img src={image} alt="EchoHome Gallery" class="rounded-lg shadow-lg" /></a>
+  imagesLink.map(({image, enlace, title}) => (
+    <a href={enlace} target="_blank"><img src={image} alt="EchoHome Gallery" class="rounded-lg shadow-lg mt-3" /><h4 class="mt-3 ml-3 min-w-[180px] max-w-[180px] bg-gray-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors">{title}</h4></a>
   ))
   }
 </div>
