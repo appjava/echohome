@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #inicio{
-    background-image: url(src/images/Cover.jpg);
+    background-image: url(images/Cover.jpg);
     background-color:black;
     background-repeat: no-repeat;
     background-attachment: fixed;
